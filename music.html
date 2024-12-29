@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Music</h1>
+        <button id="home-btn" onclick="window.location.href='index.html'">Home</button>
+    </header>
+    <main>
+        <section id="youtube-player">
+            <h2>My YouTube Playlist</h2>
+            <iframe id="youtube-iframe"
+                src="https://www.youtube.com/embed/videoseries?list=PLw-VjHDlEOgF3X8tjEQtX4Sckj7FcQOVt" width="100%"
+                height="400" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </section>
+        <select id="playlist-selector" onchange="changePlaylist()">
+            <option value="PLw-VjHDlEOgF3X8tjEQtX4Sckj7FcQOVt">Playlist 1</option>
+            <option value="PLy4rKxYMiR8m1Pb7-EUEx60pSkD2HqH3v">Playlist 2</option>
+        </select>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

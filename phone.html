@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Phone</h1>
+        <button id="home-btn" onclick="window.location.href='index.html'">Home</button>
+    </header>
+    <main>
+        <!-- Display -->
+        <div id="display">
+            <span id="phone-number"></span>
+        </div>
+
+        <!-- Keypad -->
+        <div id="keypad">
+            <button class="key" onclick="addNumber('1')">1</button>
+            <button class="key" onclick="addNumber('2')">2</button>
+            <button class="key" onclick="addNumber('3')">3</button>
+            <button class="key" onclick="addNumber('4')">4</button>
+            <button class="key" onclick="addNumber('5')">5</button>
+            <button class="key" onclick="addNumber('6')">6</button>
+            <button class="key" onclick="addNumber('7')">7</button>
+            <button class="key" onclick="addNumber('8')">8</button>
+            <button class="key" onclick="addNumber('9')">9</button>
+            <button class="key" onclick="addNumber('*')">*</button>
+            <button class="key" onclick="addNumber('0')">0</button>
+            <button class="key" onclick="addNumber('#')">#</button>
+        </div>
+
+        <!-- Actions -->
+        <div id="actions">
+            <button class="action-btn" onclick="clearNumber()">Clear</button>
+            <button class="action-btn" onclick="makeCall()">Call</button>
+        </div>
+
+        <!-- Contacts and Voice Actions -->
+        <section id="voice-controls">
+            <h2>Search Contacts</h2>
+            <input type="text" id="search-contact" placeholder="Search contacts...">
+            <button class="action-btn" onclick="searchContact()">Search</button>
+            <button class="action-btn" onclick="startVoiceInput()">🎤 Voice Dial</button>
+        </section>
+
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <ul id="contact-list">
+                <!-- Dynamically populated contact list -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

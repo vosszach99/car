@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Maps</h1>
+        <select id="voice-selector"></select>
+
+
+    </header>
+    <div id="map-container">
+        <div class="map-header">
+            <input type="text" id="search-input" placeholder="Enter destination">
+            <button id="search-btn">Search</button>
+            <button id="route-btn">Get Route</button>
+        </div>
+        <div id="map"></div>
+        <div id="directions-container">
+            <p id="current-direction">Your directions will appear here...</p>
+        </div>
+    </div>
+    <button id="home-btn">Home</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
